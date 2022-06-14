@@ -63,7 +63,7 @@ const SessionCard: FC<Props> = ({ data }) => {
       <hr className="w-full border-t-2 border-gray-400 my-4" />
       <label className="relative block">
         <span className="absolute inset-y-0 left-0 flex items-center pl-2">
-          <i className="bi bi-plus-circle "></i>
+          <i className="bi bi-trash3 "></i>
         </span>
         <button
           className="border-2 border-gray-400 rounded p-1 pl-7 hover:border-gray-500 relative"
