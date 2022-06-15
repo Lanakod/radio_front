@@ -37,8 +37,11 @@ const SessionCard: FC<Props> = ({ data }) => {
         closeOnClick: true,
         draggable: true,
       });
-      setButtonDisabled(false);
-    }
+    } else
+      toast.error("Ошибка при удалении", {
+        closeOnClick: true,
+      });
+    setButtonDisabled(false);
   };
 
   return (

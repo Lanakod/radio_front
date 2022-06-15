@@ -16,7 +16,7 @@ root.render(
       <BrowserRouter>
         <ToastContainer
           position="top-right"
-          autoClose={5000}
+          autoClose={2500}
           theme="dark"
           draggable
           hideProgressBar={false}
@@ -24,7 +24,7 @@ root.render(
           closeOnClick
           rtl={false}
           pauseOnFocusLoss={false}
-          pauseOnHover={false}
+          pauseOnHover={true}
         />
         <AppRoutes />
       </BrowserRouter>

@@ -29,8 +29,11 @@ const RangeCard: FC<Props> = ({ data }) => {
         closeOnClick: true,
         draggable: true,
       });
-      setButtonDisabled(false);
-    }
+    } else
+      toast.error("Ошибка при удалении диапазона", {
+        closeOnClick: true,
+      });
+    setButtonDisabled(false);
   };
 
   return (

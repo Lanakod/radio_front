@@ -29,7 +29,10 @@ const AddQTH: FC<Props> = ({ ctx }) => {
           closeOnClick: true,
           draggable: true,
         });
-      }
+      } else
+        toast.error("Ошибка при добавлении QTH", {
+          closeOnClick: true,
+        });
     } else
       toast.error("Вы не заполнили необходимые поля", {
         position: "top-right",
